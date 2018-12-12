@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>登录</title>
+</head>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="resources/css/bootstrap.min.css">
+	<link rel="stylesheet" href="resources/css/global.css">
+
+<style>
+table{border-collapse:collapse;}
+</style>
+
+<body>
+<div class="home_top d-none d-sm-block" id="head1">
+<div class="container">
+<div class="row float-right mr-3" id="head_nav">
+<a href="index.jsp" role="button">LOGIN</a>
+</div>
+</div>
+</div>
+<!-- home_top end! -->
+<div class="home_nav" id="home_nav">
+<div class="container">
+<nav class="navbar navbar-expand-lg navbar-light">
+<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+<span class="navbar-toggler-icon"></span>
+</button>
+<a class="navbar-brand" href="index.jsp"><img src="media/logo.png" alt="软件工程"></a>
+<div class="collapse navbar-collapse"  id="navbarTogglerDemo03">
+<ul class="navbar-nav mr-auto home_top_nav">
+<li class="nav-item"><a class="nav-link" href="index.jsp">首页</a></li>
+<li class="nav-item"><a class="nav-link" href="introduce.html">专业介绍</a></li>
+<li class="nav-item dropdown">
+<a class="nav-link dropdown-toggle" href="laboratory.html" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">实验室</a>
+<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+<a class="dropdown-item" href="dsj.html"><i class="fa fa-chevron-right"></i> 大数据</a>
+<a class="dropdown-item" href="wlw.html"><i class="fa fa-chevron-right"></i> 物联网</a>
+<a class="dropdown-item" href="qrs.html"><i class="fa fa-chevron-right"></i> 嵌入式</a>
+<a class="dropdown-item" href="ios.html"><i class="fa fa-chevron-right"></i> iOS</a>
+<a class="dropdown-item" href="and.html"><i class="fa fa-chevron-right"></i> Android</a>
+</div>
+</li>
+<li class="nav-item"><a class="nav-link" href="teachers.html">教师团队</a></li>
+<li class="nav-item"><a class="nav-link" href="workguide.html">就业指南</a></li>
+</ul>
+</div>
+</nav>
+</div>
+</div>
+<!-- hoem_nav end! --> 
+<br><br><br><br><br>
+<form action="loginservlet" method="post">
+<table align="center">
+<tr><td height=90px align="center" colspan=2><h2>欢迎登录</h2></td></tr>
+<tr><td height=70px align="right"><span class="input-group-text" id="inputGroup-sizing-default">请输入用户名：</span></td><td align="left"><input type="text" class="form-control" name="user"></td></tr>
+<tr><td height=70px align="right"><span class="input-group-text" id="inputGroup-sizing-default">请输入密码：</span></td><td align="left"><input type="password" class="form-control" name="ps"></td></tr>
+<tr><td height=90px align="center" colspan=2><input class="btn btn-secondary" type="submit" value="登录"></td></tr>
+</table>
+</form>
+</body>
+</html>
